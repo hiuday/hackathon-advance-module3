@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       body {
+  font-family: sans-serif;
+  background-color: aquamarine;
+       }
+header {
+  background-color: rgb(205, 44, 44);
+  color: white;
+  padding: 10px;
+  margin: inherit;
+ 
+}
+main{
+    background-color: aquamarine;
+}
+.note-app{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+border: 1px solid black;
+border-radius: 5px;
+margin: 50px;
+margin-left: 400px ;
+margin-right: 300px;
+padding: 10px;
+background-color: white;
+}
+
+.note-app input{
+    padding: 20px;
+    width: 300px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.note-app  i {
+    width: 50%;
+    margin-left: 300px;
+    margin-top: -7px;
+   
+}
+i{
+    
+    color: yellow;
+    font-size: 20px
+    
+}
+.area{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+   
+}
+.area > .card{
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+    
+    border-radius: 5px;
+    width: 100px;
+    height: 70px;
+}
+.card i{
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+     <header>
+        <h1>Note App</h1>
+    </header>
+    <main>
+        <div class="note-app">
+            <p>Title</p>
+            <input type="text" name="" id="note-input" placeholder="Take o note...">
+            <i class="fa-solid fa-circle-plus" id="add-note"><span class="tooltiptext">Add</span></i>
+        </div>
+            <p id="error-message"></p>
+        <div class="area">
+            <div class="card">
+                <p></p>
+                <div class="icon"><i class="fa-solid fa-trash" id="delete-note"></i></div>
+            </div>
+
+            <div class="card">
+                <p></p>
+                <div class="icon">
+                    <i class="fa-solid fa-trash" id="delete-note"></i>
+                </div>
+            </div>
+            <div class="card">
+                <p></p>
+                <div class="icon"><i class="fa-solid fa-trash" id="delete-note"></i></div>
+            </div>
+            <div class="card">
+                <p></p>
+                <div class="icon"><i class="fa-solid fa-trash" id="delete-note"></i></div>
+            </div>
+            <div class="card">
+                <p></p>
+                <div class="icon"><i class="fa-solid fa-trash" id="delete-note"></i></div>
+            </div>
+            
+        </div>
+    </main>
+
+      </body>
+      <script src="../dist/src/index.js"></script>
+    </html>
